@@ -1,0 +1,41 @@
+songs:
+  - rank: 1
+    title: "有何不可"
+    artist: "许嵩"
+    duration: "4:01"
+  - rank: 2
+    title: "庐州月"
+    artist: "许嵩"
+    duration: "4:15"
+  - rank: 3
+    title: "秦时明月-飞雪玉花"
+    artist: "魏小涵"
+    duration: "1:46"
+  - rank: 4
+    title: "遠き呼び声の彼方へ"
+    artist: "矢野立美"
+    duration: "3:42"
+  - rank: 5
+    title: "如果当时"
+    artist: "许嵩"
+    duration: "5:16"
+  - rank: 6
+    title: "乌鸦"
+    artist: "许嵩"
+    duration: "5:29"
+  - rank: 7
+    title: "My Soul (我的灵魂/忧伤还是快乐)"
+    artist: "July"
+    duration: "3:50"
+  - rank: 8
+    title: "清明雨上"
+    artist: "许嵩"
+    duration: "3:39"
+  - rank: 9
+    title: "The truth that you leave (你离开的事实)"
+    artist: "Pianoboy高至豪"
+    duration: "3:43"
+  - rank: 10
+    title: "留香"
+    artist: "许嵩"
+    duration: "4:07"

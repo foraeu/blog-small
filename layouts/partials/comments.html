@@ -1,0 +1,22 @@
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+</head>
+
+<body>
+
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://waline.foraeu.top/',
+      lang: 'zh-CN',
+      // locale: { placeholder: '<评论提示语不需要的话直接注释掉本行>' },
+      wordLimit: 500,
+      search: false,
+      pageview: true,
+      dark: 'html[class="scroll-smooth dark"]',
+    });
+  </script>
+</body>

@@ -1,0 +1,6 @@
+<nav class="site-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+</nav>

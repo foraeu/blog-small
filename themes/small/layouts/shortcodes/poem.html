@@ -1,0 +1,10 @@
+<div class="poem-card">
+    <div class="poem-content">
+        {{ with .Get "content" }}
+            <div class="poem-text">{{ . }}</div>
+        {{ end }}
+        {{ with .Get "author" }}
+            <div class="poem-author">— {{ . }} —</div>
+        {{ end }}
+    </div>
+</div>

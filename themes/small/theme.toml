@@ -1,0 +1,12 @@
+name = "small"
+license = "MIT"
+licenselink = "https://github.com/yourname/small/blob/master/LICENSE"
+description = "A minimal and clean Hugo theme"
+homepage = "https://github.com/yourname/small"
+tags = ["blog", "minimal", "responsive", "simple"]
+features = ["blog"]
+min_version = "0.41.0"
+
+[author]
+  name = "Your Name"
+  homepage = "https://yourwebsite.com"

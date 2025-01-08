@@ -1,0 +1,85 @@
+{{ define "main" }}
+<div class="music-chart">
+    <h1 class="chart-title">Foraeu的年度歌单</h1>
+    
+    <!-- 3D年份选择器 -->
+    <div class="year-selector">
+        <div class="year-carousel">
+            {{ $years := slice }}
+            {{ range $key, $value := site.Data.music }}
+                {{ $years = $years | append $key }}
+            {{ end }}
+            {{ $sortedYears := sort $years }}
+            {{ range $index, $year := $sortedYears }}
+                <button class="year-btn{{ if eq $index 0 }} active{{ end }}" 
+                        data-year="{{ $year }}"
+                        data-index="{{ $index }}"
+                        style="transform: rotateY({{ mul $index 45 }}deg) translateZ(150px)">
+                    {{ $year }}
+                </button>
+            {{ end }}
+        </div>
+        <div class="carousel-nav">
+            <button class="prev-btn" aria-label="Previous Year">&lt;</button>
+            <button class="next-btn" aria-label="Next Year">&gt;</button>
+        </div>
+    </div>
+    
+    <!-- 动态生成歌曲列表 -->
+    {{ range $index, $year := $sortedYears }}
+    <div class="chart-list{{ if ne $index 0 }} hidden{{ end }}" id="chart-{{ $year }}">
+        {{ $songs := index site.Data.music $year "songs" }}
+        {{ range $songs }}
+        <div class="song-item">
+            <span class="rank">{{ .rank }}</span>
+            <div class="song-info">
+                <h3>{{ .title }}</h3>
+                <p>{{ .artist }}</p>
+            </div>
+            <span class="duration">{{ .duration }}</span>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.year-carousel');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const yearBtns = document.querySelectorAll('.year-btn');
+    const chartLists = document.querySelectorAll('.chart-list');
+    let currentRotation = 0;
+    let currentIndex = 0;
+    const totalYears = yearBtns.length;
+    const anglePerItem = 45;
+
+    function rotateCarousel(direction) {
+        currentIndex = (currentIndex + direction + totalYears) % totalYears;
+        currentRotation = currentIndex * -anglePerItem;
+        carousel.style.transform = `rotateY(${currentRotation}deg)`;
+        
+        // 更新按钮状态和显示内容
+        yearBtns.forEach((btn, index) => {
+            btn.classList.toggle('active', index === currentIndex);
+        });
+        
+        const selectedYear = yearBtns[currentIndex].getAttribute('data-year');
+        chartLists.forEach(list => {
+            list.classList.toggle('hidden', list.id !== `chart-${selectedYear}`);
+        });
+    }
+
+    prevBtn.addEventListener('click', () => rotateCarousel(-1));
+    nextBtn.addEventListener('click', () => rotateCarousel(1));
+
+    yearBtns.forEach((btn, index) => {
+        btn.addEventListener('click', function() {
+            currentIndex = index;
+            rotateCarousel(0);
+        });
+    });
+});
+</script>
+{{ end }}

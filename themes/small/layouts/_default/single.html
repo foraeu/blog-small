@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="article-main">
+    {{ if .TableOfContents }}
+    <nav class="table-of-contents my-4 p-4 bg-gray-100 dark:bg-gray-800 rounded">
+        <h2 class="text-xl font-semibold mb-2" style="font-family: Consolas, Monaco, 'JetBrains Mono', monospace;">Table of Contents</h2>
+        {{ .TableOfContents }}
+    </nav>
+    {{ end }}
+    <h1 style="text-align: center;">{{ .Title }}</h1>
+    <time style="display: block; text-align: center; font-size: 1.2em;">{{ .Date.Format "2006-01-02" }}</time>
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+
+    <div class="pt-3">
+        <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+        <div class="pt-3">
+          {{ partial "comments.html" . }}
+        </div>
+    </div>
+</article>
+{{ end }}

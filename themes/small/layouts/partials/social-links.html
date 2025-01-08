@@ -1,0 +1,10 @@
+<div class="social-links">
+    {{ range .Site.Params.social }}
+        {{ $icon := resources.Get (printf "icons/%s.svg" .icon) }}
+        <a href="{{ .url }}" title="{{ .name }}" class="social-link" {{ if ne .name "email" }}target="_blank"{{ end }}>
+            {{ if $icon }}
+                {{ $icon.Content | safeHTML }}
+            {{ end }}
+        </a>
+    {{ end }}
+</div>

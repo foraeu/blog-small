@@ -1,0 +1,12 @@
+<div class="collapse-panel">
+    <div class="collapse-header">
+        <span class="collapse-title">{{ .Get "title" | default "展开详情" }}</span>
+        <span class="collapse-icon">▼</span>
+    </div>
+    <div class="collapse-content">
+        <div class="collapse-inner">
+            {{ .Inner | markdownify }}
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,41 @@
+songs:
+  - rank: 1
+    title: "Night Cruising (夜间巡航)"
+    artist: "牛尾憲輔"
+    duration: "1:41"
+  - rank: 2
+    title: "Windy Hill (风之谷)"
+    artist: "羽肿"
+    duration: "5:08"
+  - rank: 3
+    title: "星月神话 (电视剧《神话》)"
+    artist: "金莎"
+    duration: "4:11"
+  - rank: 4
+    title: "The Entertainer"
+    artist: "Leandro Aconcha"
+    duration: "3:21"
+  - rank: 5
+    title: "ありがとう (谢谢)"
+    artist: "大橋卓弥"
+    duration: "4:59"
+  - rank: 6
+    title: "願い～あの頃のキミへ～"
+    artist: "當山みれい"
+    duration: "5:40"
+  - rank: 7
+    title: "New Boy"
+    artist: "朴树"
+    duration: "3:44"
+  - rank: 8
+    title: "海阔天空 (Boundless Ocean)"
+    artist: "Beyond"
+    duration: "5:23"
+  - rank: 9
+    title: "小城大事"
+    artist: "杨千嬅"
+    duration: "3:28"
+  - rank: 10
+    title: "笑纳 (粤语完整版)"
+    artist: "潇雨涓涓"
+    duration: "4:25"

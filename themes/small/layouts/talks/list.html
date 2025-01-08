@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="talks-container">
+    <h1 class="talks-title">随想</h1>
+    <div class="timeline">
+        {{ range .Pages.GroupByDate "2006-01" }}
+        <div class="timeline-month">
+            <h2 class="month-header">{{ .Key }}</h2>
+            {{ range .Pages }}
+            <div class="talk-item">
+                <div class="talk-meta">
+                    <time datetime="{{ .Date }}">{{ .Date.Format "01-02 15:04" }}</time>
+                </div>
+                <div class="talk-content">
+                    {{ .Content }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

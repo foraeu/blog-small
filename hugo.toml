@@ -1,0 +1,60 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Foraeu Blog'
+
+theme = "small"
+
+# 分页设置
+pagination.pagerSize = 10  # 每页显示的文章数量
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    identifier = "talks"
+    name = "Talks"
+    url = "/talks/"
+    weight = 3
+  [[menu.main]]
+    identifier = "poetry"
+    name = "Poetry"
+    url = "/poetry/"
+    weight = 5
+  [[menu.main]]
+    identifier = "music"
+    name = "Music"
+    url = "/music/"
+    weight = 6
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+  welcome = "欢迎来到我的博客！这里记录了我的学习笔记和技术分享。"
+  social = [
+    {name = "email", url = "mailto:2807463354@qq.com", icon = "email"},
+    {name = "github", url = "https://github.com/yourusername", icon = "github"},
+    # {name = "tiktok", url = "https://tiktok.com/@yourusername", icon = "tiktok"}
+    # {name = "facebook", url = "https://facebook.com/yourusername", icon = "facebook"},
+    # {name = "instagram", url = "https://instagram.com/yourusername", icon = "instagram"},
+    # {name = "reddit", url = "https://reddit.com/user/yourusername", icon = "reddit"},
+    # {name = "telegram", url = "https://t.me/yourusername", icon = "telegram"},
+    # {name = "youtube", url = "https://youtube.com/c/yourusername", icon = "youtube"}
+  ]
+ 
+  avatar = "/img/avatar.png"  # 设置你的头像路径
+  mainSections = ["posts"]  # 主要文章目录

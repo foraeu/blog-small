@@ -1,0 +1,41 @@
+songs:
+  - rank: 1
+    title: "秦时明月-飞雪玉花"
+    artist: "魏小涵"
+    duration: "1:46"
+  - rank: 2
+    title: "My Soul (我的灵魂/忧伤还是快乐)"
+    artist: "July"
+    duration: "3:50"
+  - rank: 3
+    title: "如果当时"
+    artist: "许嵩"
+    duration: "5:16"
+  - rank: 4
+    title: "有所思 (笛子版)"
+    artist: "群星"
+    duration: "1:17"
+  - rank: 5
+    title: "卡农 (经典钢琴版)"
+    artist: "dylanf"
+    duration: "5:00"
+  - rank: 6
+    title: "遠き呼び声の彼方へ"
+    artist: "矢野立美"
+    duration: "3:42"
+  - rank: 7
+    title: "有何不可"
+    artist: "许嵩"
+    duration: "4:01"
+  - rank: 8
+    title: "乌鸦"
+    artist: "许嵩"
+    duration: "5:29"
+  - rank: 9
+    title: "明智之举"
+    artist: "许嵩"
+    duration: "4:27"
+  - rank: 10
+    title: "庞贝"
+    artist: "许嵩"
+    duration: "4:16"

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="container">
+    <div class="list-intro">
+        <p>这里是我分享技术与思考的文章集合，快来探索吧！</p>
+    </div>
+    
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 15 }}
+    <div class="articles-timeline">
+        {{ $prevYear := 0 }}
+        {{ range $paginator.Pages }}
+            {{ $year := .Date.Year }}
+            {{ if ne $year $prevYear }}
+                <h2 class="timeline-year">{{ $year }}</h2>
+                {{ $prevYear = $year }}
+            {{ end }}
+            <article class="timeline-article">
+                <h3 class="article-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+                <div class="article-meta">
+                    <time class="article-date">{{ .Date.Format "01-02" }}</time>
+                    {{ if .Params.tags }}
+                    <div class="article-tags">
+                        {{ range .Params.tags }}
+                        <span class="article-tag">#{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </article>
+        {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="page-nav">
+        {{ range $paginator.Pagers }}
+        <a href="{{ .URL }}" class="page-num {{ if eq . $paginator }}active{{ end }}">
+            {{ .PageNumber }}
+        </a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}

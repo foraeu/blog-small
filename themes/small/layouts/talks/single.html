@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="talk-single">
+    <div class="talk-meta">
+        <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
+    </div>
+    <div class="talk-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

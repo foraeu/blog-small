@@ -1,0 +1,41 @@
+songs:
+  - rank: 1
+    title: "Take Me Home, Country Roads"
+    artist: "John Denver"
+    duration: "3:12"
+  - rank: 2
+    title: "茜さす (夕晖)"
+    artist: "Aimer"
+    duration: "5:29"
+  - rank: 3
+    title: "願い～あの頃のキミへ～"
+    artist: "當山みれい"
+    duration: "5:40"
+  - rank: 4
+    title: "Night Cruising (夜间巡航)"
+    artist: "牛尾憲輔"
+    duration: "1:41"
+  - rank: 5
+    title: "真的爱你 (Truly Love You)"
+    artist: "Beyond"
+    duration: "4:35"
+  - rank: 6
+    title: "故鄉物语2"
+    artist: "天山"
+    duration: "3:32"
+  - rank: 7
+    title: "Snowdreams (雪之梦)"
+    artist: "Bandari"
+    duration: "4:53"
+  - rank: 8
+    title: "Die Internationale (国际歌)"
+    artist: "Hannes Wader"
+    duration: "3:37"
+  - rank: 9
+    title: "風になる (幻化成风)"
+    artist: "つじあやの"
+    duration: "4:09"
+  - rank: 10
+    title: "海阔天空 (Boundless Ocean)"
+    artist: "Beyond"
+    duration: "5:23"

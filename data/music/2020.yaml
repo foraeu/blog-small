@@ -1,0 +1,41 @@
+songs:
+  - rank: 1
+    title: "有何不可"
+    artist: "许嵩"
+    duration: "4:01"
+  - rank: 2
+    title: "断桥残雪"
+    artist: "许嵩"
+    duration: "3:47"
+  - rank: 3
+    title: "如果当时"
+    artist: "许嵩"
+    duration: "5:16"
+  - rank: 4
+    title: "庐州月"
+    artist: "许嵩"
+    duration: "4:15"
+  - rank: 5
+    title: "清明雨上"
+    artist: "许嵩"
+    duration: "3:39"
+  - rank: 6
+    title: "明智之举"
+    artist: "许嵩"
+    duration: "4:27"
+  - rank: 7
+    title: "后会无期"
+    artist: "徐良/汪苏泷"
+    duration: "3:26"
+  - rank: 8
+    title: "又小雪"
+    artist: "许嵩"
+    duration: "1:51"
+  - rank: 9
+    title: "温泉"
+    artist: "许嵩/刘美麟"
+    duration: "4:43"
+  - rank: 10
+    title: "我想牵着你的手"
+    artist: "许嵩"
+    duration: "2:47"
