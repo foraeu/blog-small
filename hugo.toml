@@ -58,3 +58,10 @@ pagination.pagerSize = 10  # 每页显示的文章数量
  
   avatar = "/img/avatar.png"  # 设置你的头像路径
   mainSections = ["posts"]  # 主要文章目录
+
+[verification]
+  google = "A5TamEiiN5iyJ1tzSBti2aRvcCqgtNpV8Mie6Cy3XzI"
+  bing = "7C0CC30E699309107D530CC1502173F4"
+  # pinterest = ""
+  # yandex = ""
+  baidu = "codeva-ashLcc4Hzj"

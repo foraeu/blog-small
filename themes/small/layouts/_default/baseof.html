@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     
+    <!-- 搜索引擎验证 -->
+    {{ with .Site.Params.verification.google }}
+    <meta name="google-site-verification" content="{{ . }}" />
+    {{ end }}
+    {{ with .Site.Params.verification.bing }}
+    <meta name="msvalidate.01" content="{{ . }}" />
+    {{ end }}
+    {{ with .Site.Params.verification.baidu }}
+    <meta name="baidu-site-verification" content="{{ . }}" />
+    {{ end }}
+    
     <!-- 基础样式 -->
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
     
